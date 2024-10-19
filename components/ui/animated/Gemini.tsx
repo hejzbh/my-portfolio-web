@@ -31,7 +31,7 @@ export const Gemini = ({
 
   return (
     <div
-      className={`min-h-[150vh] w-full dark:border dark:border-white/[0.1] rounded-md relative overflow-clip`}
+      className={`min-h-[140vh] md:min-h-[150vh] w-full dark:border dark:border-white/[0.1] rounded-md relative overflow-clip`}
       ref={ref}
     >
       <GeminiStructure
