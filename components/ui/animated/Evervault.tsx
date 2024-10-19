@@ -28,8 +28,7 @@ export const Evervault = ({
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
 
-    const str = generateRandomString(1500);
-    setRandomString(str);
+    setRandomString(randomString);
   }
 
   return (
