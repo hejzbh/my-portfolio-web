@@ -19,7 +19,7 @@ export const Evervault = ({
   const [randomString, setRandomString] = useState("");
 
   useEffect(() => {
-    const str = generateRandomString(1500);
+    const str = generateRandomString(3500);
     setRandomString(str);
   }, []);
 

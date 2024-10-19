@@ -9,7 +9,7 @@ export interface WiresProps {
 
 const Wires = ({ className = "" }: WiresProps) => {
   return (
-    <div className={`${className}`}>
+    <div className={`px-4 xl:px-0 ${className}`}>
       <GeminiLines
         title="I merge your ideas into a project, as perfectly as these lines"
         className="py-20"
