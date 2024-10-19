@@ -14,7 +14,7 @@ const Hero = ({ className = "" }: HeroProps) => {
   return (
     <Evervault>
       <section
-        className={`min-h-[90dvh] sm:min-h-[40em] flex flex-col items-center justify-center space-y-10 sm:space-y-0 sm:justify-between sm:space-x-10 sm:flex-row p-4 md:p-[5rem] xl:p-[10rem] ${className}`}
+        className={`min-h-[90dvh] sm:min-h-[40em] flex flex-col items-center justify-center space-y-10 sm:space-y-0 sm:justify-between sm:space-x-10 sm:flex-row p-4 md:p-[5rem] xl:p-[10rem] 4xl:px-[25rem] ${className}`}
       >
         {/** Text */}
         <div className="text-center sm:text-left">
@@ -65,6 +65,21 @@ const Hero = ({ className = "" }: HeroProps) => {
               />
               .
             </p>
+          </div>
+
+          <div className="flex items-center justify-center sm:justify-start space-x-3 mt-7">
+            <Button
+              linkAsButton
+              variant="primary"
+              href="/portfolio"
+              title="View Portfolio"
+            />
+            <Button
+              variant="secondary"
+              href="resume"
+              linkAsButton
+              title="View Resume"
+            />
           </div>
         </div>
 

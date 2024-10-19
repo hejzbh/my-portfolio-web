@@ -12,6 +12,7 @@ export interface ButtonProps {
   Icon?: IconType;
   onClick?: () => void;
   href?: string;
+  linkAsButton?: boolean;
   playClickAudio?: boolean;
   title: string;
 }
@@ -26,6 +27,7 @@ const Button = ({
   variant = "primary",
   Icon,
   title = "",
+  linkAsButton,
   playClickAudio = true,
   href,
   onClick = () => {},
@@ -42,8 +44,15 @@ const Button = ({
         }}
         href={href}
         title={title}
-        className="text-primary  hover:underline"
+        className={` ${
+          linkAsButton
+            ? `p-4 px-7 md:p-5 md:px-8 4xl:p-6 4xl:px-9 rounded-3xl transition-all duration-300 ease-in-out text-xs md:text-md 2xl:text-[1.05rem] 4xl:text-[1.150rem] ${
+                Icon ? "flex items-center space-x-3 justify-center" : ""
+              } ${classNames[variant]} ${className}`
+            : "text-primary  hover:underline"
+        }`}
       >
+        {Icon && <Icon size={18} />}
         {title}
       </Link>
     );
@@ -58,14 +67,16 @@ const Button = ({
 
         onClick();
       }}
-      className={`p-3 px-6 rounded-3xl transition-all duration-300 ease-in-out ${
+      className={`p-4 px-7 md:p-5 md:px-8 4xl:p-6 4xl:px-9 rounded-3xl transition-all duration-300 ease-in-out ${
         Icon ? "flex items-center space-x-3 justify-center" : ""
       } ${classNames[variant]} ${className}`}
       title={title}
     >
       {Icon && <Icon size={18} />}
 
-      <p className="text-md 2xl:text-[1.05rem]">{title}</p>
+      <p className="text-xs md:text-md 2xl:text-[1.05rem] 4xl:text-[1.150rem]">
+        {title}
+      </p>
     </button>
   );
 };
