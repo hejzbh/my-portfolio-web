@@ -64,7 +64,7 @@ export const GeminiStructure = ({
   return (
     <div className={cn("sticky top-0 w-full", className)}>
       {title && (
-        <h2 className="text-2xl xl:text-3xl 3xl:text-5xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-primary/90 to-neutral-300">
+        <h2 className="text-2xl 2xl:text-3xl 3xl:text-5xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-primary/90 to-neutral-300">
           {title}
         </h2>
       )}

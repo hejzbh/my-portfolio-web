@@ -29,11 +29,11 @@ const NavigationLinks = ({ className = "" }: NavigationLinksProps) => {
             <Link
               href={link.href}
               title={link.name}
-              className={`p-2 py-3 rounded-lg flex items-center space-x-2 text-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-white 
+              className={`p-2 py-3 4xl:py-4 rounded-lg flex items-center space-x-2 text-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-white 
                 ${isActive ? "bg-primary text-white" : ""}`} // Add active link class
             >
               <Icon className="text-lg 2xl:text-xl" />
-              <p className="text-sm 3xl:text-lg 4xl:text-[1.150rem] ">
+              <p className="text-sm 3xl:text-[1.050rem] 4xl:text-[1.150rem] ">
                 {link.name}
               </p>
             </Link>
