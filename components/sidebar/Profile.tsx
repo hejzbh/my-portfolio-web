@@ -13,7 +13,7 @@ const Profile = ({ className = "" }: ProfileProps) => {
       {/*  Photo */}
       <div className="relative">
         <Image
-          src="/images/my-photo.jfif"
+          src="/images/my-photo.webp"
           width={150}
           height={150}
           alt="My Photo"

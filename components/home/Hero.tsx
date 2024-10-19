@@ -70,7 +70,7 @@ const Hero = ({ className = "" }: HeroProps) => {
         {/** Image */}
         <div>
           <Image
-            src={"/images/my-photo.jfif"}
+            src={"/images/my-photo.webp"}
             loading="lazy"
             width={400}
             height={400}
