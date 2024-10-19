@@ -11,7 +11,7 @@ const Wires = ({ className = "" }: WiresProps) => {
   return (
     <div className={`px-4 xl:px-0 ${className}`}>
       <GeminiLines
-        title="I merge your ideas into a project, as perfectly as these lines"
+        title="I merge your ideas as seamlessly as these lines"
         className="py-20"
       />
     </div>

@@ -27,6 +27,7 @@ const NavigationLinks = ({ className = "" }: NavigationLinksProps) => {
             key={link.href}
           >
             <Link
+              scroll
               href={link.href}
               title={link.name}
               className={`p-2 py-3 4xl:py-4 rounded-lg flex items-center space-x-2 text-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-white 
