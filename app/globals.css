@@ -6,3 +6,10 @@ html,
 body {
   font-size: 13.8px;
 }
+
+@media (max-width: 768px) {
+  body,
+  body {
+    font-size: 15px;
+  }
+}
