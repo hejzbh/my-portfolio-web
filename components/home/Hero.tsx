@@ -14,7 +14,7 @@ const Hero = ({ className = "" }: HeroProps) => {
   return (
     <Evervault>
       <section
-        className={`min-h-[100dvh] sm:min-h-[40em] flex flex-col items-center justify-center space-y-10 sm:space-y-0 sm:justify-between sm:space-x-10 sm:flex-row p-4 md:p-[5rem] xl:p-[10rem] ${className}`}
+        className={`min-h-[90dvh] sm:min-h-[40em] flex flex-col items-center justify-center space-y-10 sm:space-y-0 sm:justify-between sm:space-x-10 sm:flex-row p-4 md:p-[5rem] xl:p-[10rem] ${className}`}
       >
         {/** Text */}
         <div className="text-center sm:text-left">
