@@ -23,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className}`}>
-        <div className="grid grid-cols-[20%,80%]">
-          <Sidebar />
+        <div className="lg:grid  lg:grid-cols-[25%,75%] xl:grid-cols-[18%,82%]">
+          <Sidebar className="hidden lg:flex" />
           <main>{children}</main>
         </div>
       </body>

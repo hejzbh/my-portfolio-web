@@ -1,18 +1,21 @@
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("@/components/home/Hero"));
+const Wires = dynamic(() => import("@/components/home/Wires"));
+
 export default function Home() {
   return (
-    <div className="min-h-[600em] space-y-10 bg-white p-10">
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
-      <div className="p-20 bg-[green]"></div>
+    <div className="bg-white">
+      <Hero />
+      <Wires />
+      <div className="min-h-[30em] bg-[red]"></div>
+      <div className="min-h-[30em]"></div>
+      <div className="min-h-[30em]"></div>
+      <div className="min-h-[30em]"></div>
+      <div className="min-h-[30em]"></div>
+      <div className="min-h-[30em]"></div>
+      <div className="min-h-[30em]"></div>
+      <div className="min-h-[30em]"></div>
     </div>
   );
 }
