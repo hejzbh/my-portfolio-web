@@ -51,14 +51,14 @@ const Hero = ({ className = "" }: HeroProps) => {
               {" "}
               Explore my{" "}
               <Button
-                href="/portfolio"
+                href="#portfolio"
                 title="Portfolio"
                 variant="primary"
                 className="text-primary  hover:underline"
               />
               ,{" "}
               <Button
-                href="/resume"
+                href="#resume"
                 title="Resume "
                 variant="primary"
                 className="text-primary  hover:underline"
@@ -77,12 +77,12 @@ const Hero = ({ className = "" }: HeroProps) => {
             <Button
               linkAsButton
               variant="primary"
-              href="/portfolio"
+              href="#portfolio"
               title="View Portfolio"
             />
             <Button
               variant="secondary"
-              href="resume"
+              href="#resume"
               linkAsButton
               title="View Resume"
             />
