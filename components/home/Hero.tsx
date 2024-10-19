@@ -14,7 +14,7 @@ const Hero = ({ className = "" }: HeroProps) => {
   return (
     <Evervault>
       <section
-        className={`min-h-[90dvh] sm:min-h-[40em] flex flex-col items-center justify-center space-y-10 sm:space-y-0 sm:justify-between sm:space-x-10 sm:flex-row p-4 md:p-[5rem] xl:p-[10rem] 4xl:px-[25rem] ${className}`}
+        className={`min-h-[100dvh] sm:min-h-[40em] flex flex-col items-center justify-center space-y-10 sm:space-y-0 sm:justify-between sm:space-x-10 sm:flex-row p-4 md:p-[5rem] xl:p-[10rem] 4xl:px-[25rem] ${className}`}
       >
         {/** Text */}
         <div className="text-center sm:text-left">
@@ -55,15 +55,21 @@ const Hero = ({ className = "" }: HeroProps) => {
                 title="Portfolio"
                 variant="primary"
                 className="text-primary  hover:underline"
-              />{" "}
-              and{" "}
+              />
+              ,{" "}
               <Button
                 href="/resume"
-                title="Resume"
+                title="Resume "
                 variant="primary"
                 className="text-primary  hover:underline"
               />
-              .
+              or
+              <Button
+                href="https://www.webranch.team/"
+                title=" Agency"
+                variant="primary"
+                className="text-primary  hover:underline"
+              />
             </p>
           </div>
 
