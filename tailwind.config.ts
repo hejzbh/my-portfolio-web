@@ -17,7 +17,7 @@ const config: Config = {
       },
     },
     fontSize: {
-      xs: ".65rem",
+      xs: ".70rem",
       sm: ".775rem",
       tiny: ".875rem",
       base: "1rem",
