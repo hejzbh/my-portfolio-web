@@ -23,14 +23,14 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl  w-auto  h-auto rounded-xl p-6 border  ">
           <CardItem
             translateZ="50"
-            className="text-[1rem] xl:text-xl font-semibold text-secondary"
+            className="text-[1rem] xl:text-xl 3xl:text-[1.4rem] font-semibold text-secondary"
           >
             {project.name}
           </CardItem>
           <CardItem
             as="p"
             translateZ="60"
-            className="text-[.7rem] md:text-[1rem] 3xl:text-[1.1250rem] text-secondary min-h-[3.5em] pt-2"
+            className="text-xs md:text-sm 3xl:text-lg text-secondary min-h-[3.5em] pt-2"
           >
             {project.shortDescription}
           </CardItem>
