@@ -2,7 +2,8 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 const SectionHeading = dynamic(() => import("@/components/ui/SectionHeading"));
-const Journey = dynamic(() => import("@/components/Journey"));
+const Technologies = dynamic(() => import("@/components/resume/Technologies"));
+const Journey = dynamic(() => import("@/components/resume/Journey"));
 
 export interface SkillsAndExperienceProps {
   className?: string;
@@ -23,6 +24,9 @@ const SkillsAndExperience = ({ className = "" }: SkillsAndExperienceProps) => {
           variant: "primary",
         }}
       />
+
+      {/** Technologies I work with */}
+      <Technologies className="mb-10" />
 
       {/** Journey */}
       <Journey />
