@@ -14,7 +14,7 @@ const Portfolio = ({ className = "" }: PortfolioProps) => {
   return (
     <section
       id="portfolio"
-      className={`p-4 md:p-[5rem] xl:p-[10rem] ${className}`}
+      className={`p-4 !py-14 md:p-[5rem] xl:p-[10rem] ${className}`}
     >
       {/* Heading */}
       <SectionHeading
