@@ -31,7 +31,7 @@ const SectionHeading = ({
         >
           {title}
         </h2>
-        <p className="text-paragraph text-sm md:text-base 3xl:text-xl pt-2 ">
+        <p className="text-paragraph text-sm md:text-base 2xl:text-[1.090rem] 3xl:text-xl pt-2 ">
           {description}
         </p>
       </div>
