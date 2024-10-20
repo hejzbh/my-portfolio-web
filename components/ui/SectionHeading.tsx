@@ -27,7 +27,7 @@ const SectionHeading = ({
     >
       <div className="md:max-w-[70%]">
         <h2
-          className={`text-secondary font-semibold text-3xl md:text-4xl xl:text-[3.5rem] 4xl:text-[4.1rem] border-l-2 border-primary pl-2`}
+          className={`text-secondary font-semibold text-3xl md:text-4xl 3xl:text-[3.5rem] 4xl:text-[4.1rem] border-l-2 border-primary pl-2`}
         >
           {title}
         </h2>
