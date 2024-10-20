@@ -30,7 +30,7 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
           <CardItem
             as="p"
             translateZ="60"
-            className="text-sm md:text-[1.1250rem] text-secondary min-h-[3.5em] pt-2"
+            className="text-[.7rem] md:text-[1.1250rem] text-secondary min-h-[3.5em] pt-2"
           >
             {project.shortDescription}
           </CardItem>
