@@ -29,7 +29,9 @@ const Profile = ({ className = "" }: ProfileProps) => {
         <h2 className="text-xl 2xl:text-2xl font-semibold text-secondary">
           Hazim Tulumovic
         </h2>
-        <p className="text-sm text-secondary">Software Developer</p>
+        <p className="text-sm md:text-base text-secondary">
+          Software Developer
+        </p>
       </div>
       {/** Social Links */}
     </div>
