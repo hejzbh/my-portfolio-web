@@ -12,7 +12,7 @@ const ProjectsList = ({ className = "" }: ProjectsListProps) => {
   return (
     <div className={`${className}`}>
       <ul
-        className="gap-14 "
+        className="gap-8 md:gap-14"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",

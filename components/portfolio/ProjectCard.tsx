@@ -18,7 +18,7 @@ export interface ProjectCardProps {
 
 const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
   return (
-    <article className={`${className}`}>
+    <article className={`h-full ${className}`}>
       <CardContainer className="inter-var">
         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl  w-auto  h-auto rounded-xl p-6 border  ">
           <CardItem
