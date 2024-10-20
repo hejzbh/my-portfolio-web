@@ -15,7 +15,7 @@ const ProjectsList = ({ className = "" }: ProjectsListProps) => {
         className="gap-14 "
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
         }}
       >
         {projects?.map((project) => (
