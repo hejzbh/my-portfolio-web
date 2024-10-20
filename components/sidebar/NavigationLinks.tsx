@@ -34,7 +34,7 @@ const NavigationLinks = ({ className = "" }: NavigationLinksProps) => {
                 ${isActive ? "bg-primary text-white" : ""}`} // Add active link class
             >
               <Icon className="text-lg 2xl:text-xl" />
-              <p className="text-sm 3xl:text-[1.050rem] 4xl:text-[1.150rem] ">
+              <p className="text-sm 2xl:text-[1.050rem] 4xl:text-[1.150rem] ">
                 {link.name}
               </p>
             </Link>
