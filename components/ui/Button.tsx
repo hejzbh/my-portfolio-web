@@ -15,11 +15,17 @@ export interface ButtonProps {
   linkAsButton?: boolean;
   playClickAudio?: boolean;
   title: string;
+  size?: "sm" | "lg";
 }
 
 const classNames = {
   primary: "bg-primary hover:bg-secondary text-white",
   secondary: "bg-secondary hover:bg-primary text-white",
+};
+
+const sizes = {
+  sm: "p-2 px-4 md:p-4 md:px-6 4xl:p-4 4xl:px-6",
+  lg: "p-4 px-7 md:p-5 md:px-8 4xl:p-6 4xl:px-9",
 };
 
 const Button = ({
@@ -30,6 +36,7 @@ const Button = ({
   linkAsButton,
   playClickAudio = true,
   href,
+  size = "lg",
   onClick = () => {},
 }: ButtonProps) => {
   const { playAudio } = useAudioEffects();
@@ -46,7 +53,9 @@ const Button = ({
         title={title}
         className={` ${
           linkAsButton
-            ? `p-4 px-7 md:p-5 md:px-8 4xl:p-6 4xl:px-9 rounded-3xl transition-all duration-300 ease-in-out text-xs md:text-md 2xl:text-[1.05rem] 4xl:text-[1.150rem] ${
+            ? `${
+                sizes[size]
+              } rounded-3xl transition-all duration-300 ease-in-out text-xs md:text-md 2xl:text-[1.05rem] 4xl:text-[1.150rem] ${
                 Icon ? "flex items-center space-x-3 justify-center" : ""
               } ${classNames[variant]} ${className}`
             : "text-primary  hover:underline"
@@ -67,14 +76,16 @@ const Button = ({
 
         onClick();
       }}
-      className={`p-4 px-7 md:p-5 md:px-8 4xl:p-6 4xl:px-9 rounded-3xl transition-all duration-300 ease-in-out ${
+      className={`${
+        sizes[size]
+      } rounded-3xl transition-all duration-300 ease-in-out ${
         Icon ? "flex items-center space-x-3 justify-center" : ""
       } ${classNames[variant]} ${className}`}
       title={title}
     >
       {Icon && <Icon size={18} />}
 
-      <p className="text-xs md:text-md 2xl:text-[1.05rem] 4xl:text-[1.150rem]">
+      <p className="text-xs md:text-md 2xl:text-[1rem] 4xl:text-[1.10rem]">
         {title}
       </p>
     </button>

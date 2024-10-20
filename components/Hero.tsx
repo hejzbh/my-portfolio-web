@@ -42,7 +42,7 @@ const Hero = ({ className = "" }: HeroProps) => {
           <h1 className="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl 4xl:text-9xl text-main font-semibold my-4 md:mb-7 text-primary">
             Developer
           </h1>
-          <div className="text-sm md:text-sm 3xl:text-lg">
+          <div className="text-sm md:text-sm 3xl:text-lg text-paragraph">
             <p>
               I'm a Hazim Tulumovic, specializing in scalable web & mobile apps.
             </p>

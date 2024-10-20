@@ -3,3 +3,11 @@ export type NavigationLinkType = {
   Icon: any;
   href: string;
 };
+
+export type ProjectType = {
+  id: string;
+  name: string;
+  shortDescription: string;
+  githubUrl?: string;
+  thumbnail: string;
+};

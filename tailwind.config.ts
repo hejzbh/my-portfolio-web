@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         primary: "#5271FF",
         secondary: "#292929",
+        paragraph: "#4f4f4f",
         sidebarBG: "#FAFAFA",
       },
     },
