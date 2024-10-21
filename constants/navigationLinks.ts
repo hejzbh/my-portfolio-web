@@ -7,6 +7,6 @@ import { IoCallOutline } from "react-icons/io5";
 export const navigationLinks: NavigationLinkType[] = [
   { name: "About Me", href: "#hero", Icon: LuUser2 },
   { name: "Portfolio", href: "#portfolio", Icon: IoCodeSlash },
-  { name: "Journey", href: "#journey", Icon: GrDocumentText },
+  { name: "Resume", href: "#resume", Icon: GrDocumentText },
   { name: "Contact", href: "#contact", Icon: IoCallOutline },
 ];
