@@ -9,6 +9,8 @@ const Portfolio = dynamic(() => import("@/components/portfolio/Portfolio"));
 const SkillsAndExperience = dynamic(
   () => import("@/components/resume/SkillsAndExperience")
 );
+const Contact = dynamic(() => import("@/components/Contact"));
+const Footer = dynamic(() => import("@/components/Footer"));
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Wires />
       <Portfolio />
       <SkillsAndExperience />
+      <Contact />
+      <Footer />
 
       <ScrollToSectionListener />
     </>
