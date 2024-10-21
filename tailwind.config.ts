@@ -15,6 +15,10 @@ const config: Config = {
         paragraph: "#4f4f4f",
         sidebarBG: "#FAFAFA",
       },
+      gridTemplateColumns: {
+        "projects-list-xl": "repeat(auto-fit, minmax(350px, 1fr))",
+        "projects-list-sm": "repeat(auto-fit, minmax(250px, 1fr))",
+      },
     },
     fontSize: {
       xs: ".70rem",

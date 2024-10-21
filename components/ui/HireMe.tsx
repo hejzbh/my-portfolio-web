@@ -14,6 +14,8 @@ const HireMe = ({ className = "" }: HireMeProps) => {
     <Button
       title="Hire Me"
       variant="primary"
+      linkAsButton
+      href="#contact"
       Icon={BsSendArrowUp}
       className={`${className}`}
     />

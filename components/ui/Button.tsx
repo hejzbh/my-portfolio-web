@@ -61,7 +61,7 @@ const Button = ({
             : "text-primary  hover:underline"
         }`}
       >
-        {Icon && <Icon size={18} />}
+        {Icon && <Icon size={18} className="mr-3" />}
         {title}
       </Link>
     );

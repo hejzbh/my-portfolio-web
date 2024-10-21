@@ -39,7 +39,7 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
               src={project.thumbnail}
               height="1000"
               width="1000"
-              className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+              className="h-[10rem] md:h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
               alt="thumbnail"
             />
           </CardItem>

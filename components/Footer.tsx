@@ -5,7 +5,14 @@ export interface FooterProps {
 }
 
 const Footer = ({ className = "" }: FooterProps) => {
-  return <footer className={`${className}`}></footer>;
+  return (
+    <footer
+      className={`p-4 !pt-20 !pb-4 md:p-[5rem] text-center text-paragraph xl:p-[10rem] text-sm md:text-base 3xl:text-lg  ${className}`}
+    >
+      Copyright © {new Date().getFullYear()} Hazim Tulumovic. All Rights
+      Reserved.
+    </footer>
+  );
 };
 
 export default Footer;

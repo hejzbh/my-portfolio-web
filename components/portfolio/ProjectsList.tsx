@@ -11,15 +11,9 @@ export interface ProjectsListProps {
 const ProjectsList = ({ className = "" }: ProjectsListProps) => {
   return (
     <div className={`${className}`}>
-      <ul
-        className="gap-8 md:gap-14"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-        }}
-      >
+      <ul className="gap-8 md:gap-14 flex md:grid overflow-x-scroll md:overflow-x-visible grid-cols-projects-list-sm xl:grid-cols-projects-list-xl">
         {projects?.map((project) => (
-          <li key={project.id}>
+          <li className="min-w-[290px] md:min-w-[250px]" key={project.id}>
             <ProjectCard project={project} />
           </li>
         ))}
