@@ -16,7 +16,8 @@ const config: Config = {
         sidebarBG: "#FAFAFA",
       },
       gridTemplateColumns: {
-        "projects-list-xl": "repeat(auto-fit, minmax(350px, 1fr))",
+        "projects-list-xl": "repeat(auto-fit, minmax(280px, 1fr))",
+        "projects-list-3xl": "repeat(auto-fit, minmax(350px, 1fr))",
         "projects-list-sm": "repeat(auto-fit, minmax(250px, 1fr))",
       },
     },
