@@ -1,7 +1,7 @@
 "use client";
 import { ProjectType } from "@/types";
 import dynamic from "next/dynamic";
-import React, { createContext, useContext, useMemo, useState } from "react";
+import React, { createContext, useMemo, useState } from "react";
 
 export const ModalContext = createContext({} as ProviderValueType);
 
