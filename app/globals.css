@@ -17,3 +17,7 @@ html {
     font-size: 13.7px;
   }
 }
+
+b {
+  font-weight: 700;
+}

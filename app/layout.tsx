@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 const Sidebar = dynamic(() => import("@/components/sidebar/Sidebar"));
 
 const font = Poppins({
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin", "latin-ext"],
 });
 
