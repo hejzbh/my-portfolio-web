@@ -8,6 +8,8 @@ export type ProjectType = {
   id: string;
   name: string;
   shortDescription: string;
+  technologiesIds?: number[];
   githubUrl?: string;
   thumbnail: string;
+  features?: string[];
 };

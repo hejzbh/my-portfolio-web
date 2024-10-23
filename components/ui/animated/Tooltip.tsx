@@ -88,7 +88,7 @@ export const AnimatedTooltip = ({ items, max = 100 }: AnimatedTooltipProps) => {
               width={150}
               src={item.image}
               alt={item.name}
-              className="object-cover !m-0 !p-0 object-top rounded-full h-[3.5rem] w-[3.5rem]  md:h-[4.5rem] md:w-[4.5rem] border-2 group-hover:scale-105 group-hover:z-30 border-white bg-white relative transition duration-500"
+              className="object-cover !m-0 !p-0 object-top rounded-full h-[3.5rem] w-[3.5rem]  md:h-[4.2rem] md:w-[4.2rem] border-2 group-hover:scale-105 group-hover:z-30 border-white bg-white relative transition duration-500"
             />
           </div>
         ))}
@@ -98,7 +98,7 @@ export const AnimatedTooltip = ({ items, max = 100 }: AnimatedTooltipProps) => {
           <button
             title={isLoadedMore ? "Show less" : "Show more"}
             onClick={() => setIsLoadedMore((value) => !value)}
-            className="ml-5 text-xs md:text-sm 3xl:text-lg hover:text-primary transition cursor-pointer p-1"
+            className="ml-5 text-xs md:text-sm 3xl:text-base hover:text-primary transition cursor-pointer p-1"
           >
             {isLoadedMore ? "Show less" : "Show more"}
           </button>

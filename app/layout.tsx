@@ -4,6 +4,9 @@ import "./globals.css";
 import dynamic from "next/dynamic";
 
 const Sidebar = dynamic(() => import("@/components/sidebar/Sidebar"));
+const ModalProvider = dynamic(
+  () => import("@/components/providers/ModalProvider")
+);
 
 const font = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -24,10 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className}`}>
-        <div className="lg:grid  lg:grid-cols-[25%,75%] xl:grid-cols-[18%,82%]">
-          <Sidebar className="hidden lg:flex" />
-          <main>{children}</main>
-        </div>
+        <ModalProvider>
+          <div className="lg:grid  lg:grid-cols-[25%,75%] xl:grid-cols-[18%,82%]">
+            <Sidebar className="hidden lg:flex" />
+            <main>{children}</main>
+          </div>
+        </ModalProvider>
       </body>
     </html>
   );

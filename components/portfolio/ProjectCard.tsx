@@ -1,4 +1,4 @@
-"use";
+"use client";
 import React from "react";
 import {
   CardBody,
@@ -10,6 +10,7 @@ import Image from "next/image";
 import Button from "@/components/ui/Button";
 import { FaGithub } from "react-icons/fa";
 import { ProjectType } from "@/types";
+import useModal from "@/hooks/use-modal";
 
 export interface ProjectCardProps {
   className?: string;
@@ -17,6 +18,8 @@ export interface ProjectCardProps {
 }
 
 const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
+  const { openModal } = useModal();
+
   return (
     <article className={`h-full ${className}`}>
       <CardContainer className="inter-var">
@@ -45,21 +48,17 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
           </CardItem>
           <div className="flex justify-between items-center mt-20">
             {project.githubUrl ? (
-              <CardItem
-                translateZ={20}
-                as={Link}
-                href={project.githubUrl}
-                target="__blank"
-                className="px-4 py-2 rounded-xl text-xs md:text-[1rem] font-normal text-secondary hover:text-primary transition"
-              >
-                <FaGithub className="inline-block mr-2" size={16} />
-                Get Code
-              </CardItem>
+              <GetCode githubUrl={project.githubUrl} />
             ) : (
               <div></div>
             )}
             <CardItem translateZ={20} as="div">
-              <Button title="About" variant="secondary" size="sm" />
+              <Button
+                title="About"
+                variant="secondary"
+                size="sm"
+                onClick={() => openModal("projectDetails", { project })}
+              />
             </CardItem>
           </div>
         </CardBody>
@@ -69,3 +68,22 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
 };
 
 export default ProjectCard;
+
+export const GetCode = ({
+  githubUrl,
+  className = "",
+}: {
+  githubUrl: string;
+  className?: string;
+}) => {
+  return (
+    <Link
+      href={githubUrl}
+      target="__blank"
+      className={`px-4 py-2 rounded-xl text-xs md:text-[1rem] font-normal text-secondary hover:text-primary transition block ${className}`}
+    >
+      <FaGithub className="inline-block mr-2" size={16} />
+      Get Code
+    </Link>
+  );
+};
