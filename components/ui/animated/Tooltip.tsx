@@ -98,7 +98,7 @@ export const AnimatedTooltip = ({ items, max = 100 }: AnimatedTooltipProps) => {
           <button
             title={isLoadedMore ? "Show less" : "Show more"}
             onClick={() => setIsLoadedMore((value) => !value)}
-            className="ml-5 text-xs md:text-sm 3xl:text-base hover:text-primary transition cursor-pointer p-1"
+            className="ml-5 text-xs md:text-base 3xl:text-base hover:text-primary transition cursor-pointer p-1"
           >
             {isLoadedMore ? "Show less" : "Show more"}
           </button>
