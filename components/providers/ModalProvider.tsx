@@ -40,7 +40,7 @@ export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
       },
       data,
     }),
-    [isOpen, type]
+    [isOpen, type, data]
   );
 
   const renderModal = () => {
