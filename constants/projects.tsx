@@ -20,7 +20,7 @@ export const projects: ProjectType[] = [
       "more...",
     ],
     videoSrc:
-      "https://www.youtube.com/watch?v=JKkN-uPT7VA&ab_channel=StoicShift",
+      "https://www.youtube.com/watch?v=bKUdKI_cvn4&ab_channel=HazimTulumovic",
     jsxContent: () => {
       return (
         <div>
