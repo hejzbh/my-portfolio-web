@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { li } from "framer-motion/client";
 
 const Lens = dynamic(() => import("@/components/ui/animated/Lens"));
 
