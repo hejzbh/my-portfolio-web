@@ -42,7 +42,8 @@ export const projects: ProjectType[] = [
             >
               Microsoft
             </Link>
-            , aimed at helping their employees .
+            , aimed at helping their employees . NAPOMENA - Dodati slike chat
+            advisora, shopa itd
           </p>
         </div>
       );
