@@ -74,9 +74,9 @@ export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
 
             providerValue.closeModal();
           }}
-          className="fixed top-0 left-0 w-full h-full z-20 flex items-center justify-center p-5"
+          className="fixed top-0 left-0 w-full h-full z-[2000] flex items-center justify-center p-5"
         >
-          <div className="inside">{renderModal()}</div>
+          <div className="inside lg:max-w-[850px]">{renderModal()}</div>
         </div>
       )}
     </ModalContext.Provider>

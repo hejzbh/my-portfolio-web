@@ -1,4 +1,5 @@
 import { ProjectType } from "@/types";
+import Link from "next/link";
 
 export const projects: ProjectType[] = [
   {
@@ -14,9 +15,38 @@ export const projects: ProjectType[] = [
       "Auth: Auth0 authentication for secure user access",
       "Stripe: Shop, Pricing Plans, Subscriptions, Invoices, Payments etc.",
       "User Management: Administrative control over user's roles, blocking, permissions, profiles etc.",
+      "Personalized Content: Display options for enhanced user experience",
       "AI Chat: Advisor for user interactions and support",
       "more...",
     ],
+    videoSrc:
+      "https://www.youtube.com/watch?v=JKkN-uPT7VA&ab_channel=StoicShift",
+    jsxContent: () => {
+      return (
+        <div>
+          {" "}
+          <p>
+            Startup idea led by Cloud Specialist{" "}
+            <Link
+              title="LinkedIn Profile"
+              href={"https://www.linkedin.com/in/vedranh/"}
+              className="text-primary underline"
+            >
+              Vedran Hromalic
+            </Link>{" "}
+            for a company partnered with{" "}
+            <Link
+              title="LinkedIn Profile"
+              href={"https://www.linkedin.com/company/microsoft/"}
+              className="text-primary underline"
+            >
+              Microsoft
+            </Link>
+            , aimed at helping their employees .
+          </p>
+        </div>
+      );
+    },
   },
   {
     id: "webonify",

@@ -11,5 +11,7 @@ export type ProjectType = {
   technologiesIds?: number[];
   githubUrl?: string;
   thumbnail: string;
+  jsxContent?: () => any;
+  videoSrc?: string;
   features?: string[];
 };
