@@ -1,6 +1,8 @@
 import { ProjectType } from "@/types";
 import React from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
+import { FaEye } from "react-icons/fa";
 
 const Technologies = dynamic(() => import("@/components/resume/Technologies"));
 const GetCode = dynamic(() =>
@@ -73,10 +75,22 @@ const ProjectDetailsModal = ({
         </div>
       )}
 
-      {/** Get Code */}
-      {project.githubUrl && (
-        <GetCode githubUrl={project.githubUrl} className="mt-5" />
-      )}
+      <div className="flex items-center space-x-1 mt-5">
+        {/** Get Code */}
+        {project.githubUrl && <GetCode githubUrl={project.githubUrl} />}
+        {/** Demo URL */}
+        {project.demoUrl && (
+          <Link
+            href={project.demoUrl}
+            target="_self"
+            title="Live Demo"
+            className="p-2 text-secondary hover:text-primary flex items-center"
+          >
+            <FaEye size={18} className="mr-2" />
+            Live Demo
+          </Link>
+        )}
+      </div>
     </main>
   );
 };

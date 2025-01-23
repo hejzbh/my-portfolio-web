@@ -8,7 +8,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaEye } from "react-icons/fa";
 import { ProjectType } from "@/types";
 import useModal from "@/hooks/use-modal";
 
@@ -47,11 +47,19 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
             />
           </CardItem>
           <div className="flex justify-between items-center mt-20">
-            {project.githubUrl ? (
-              <GetCode githubUrl={project.githubUrl} />
-            ) : (
-              <div></div>
-            )}
+            <div className="flex items-center space-x-1">
+              {project.githubUrl && <GetCode githubUrl={project.githubUrl} />}
+              {project.demoUrl && (
+                <Link
+                  href={project.demoUrl}
+                  target="_self"
+                  title="Live Demo"
+                  className="p-2 text-secondary flex hover:text-primary"
+                >
+                  <FaEye size={18} className="mr-1" /> Demo
+                </Link>
+              )}
+            </div>
             <CardItem translateZ={20} as="div">
               <Button
                 title="About"

@@ -1,14 +1,24 @@
 import { ProjectType } from "@/types";
 import Link from "next/link";
+import { TechnologyID } from "./technologies";
 
 export const projects: ProjectType[] = [
   {
     id: "vyre",
     name: "Cloudvyre",
     shortDescription:
-      "Automated platform for seamless Azure operations and efficient cloud management.",
+      "SaaS: Automated platform for seamless Azure operations and efficient cloud management.",
     thumbnail: "/images/projects/vyre/thumbnail.webp",
-    technologiesIds: [1, 2, 3, 171, 9, 10, 17, 18], // @/constants/technologies.ts for details
+    technologiesIds: [
+      TechnologyID.JavaScript,
+      TechnologyID.TypeScript,
+      TechnologyID.Stripe,
+      TechnologyID.React,
+      TechnologyID.ViteJS,
+      TechnologyID.Auth0,
+      TechnologyID.Tailwind,
+      TechnologyID.MORE,
+    ], // @/constants/technologies.ts for details
     features: [
       "Wrote enterprise code",
       "3D charts and interactive tables for data visualization (Stats, Key Metrics, etc.)",
@@ -42,12 +52,83 @@ export const projects: ProjectType[] = [
             >
               Microsoft
             </Link>
-            , aimed at helping their employees . NAPOMENA - Dodati slike chat
-            advisora, shopa itd
+            , aimed at helping their employees.
           </p>
         </div>
       );
     },
+  },
+  {
+    id: "scrapmatic",
+    name: "Scrapmatic - No code web scraper",
+    shortDescription:
+      "SaaS: Full Stack Application that automates web scraping",
+    thumbnail: "/images/projects/scrapmatic/thumbnail.webp",
+    technologiesIds: [
+      TechnologyID.NextJS,
+      TechnologyID.Python,
+      TechnologyID.MongoDB,
+      TechnologyID.Stripe,
+      TechnologyID.TypeScript,
+      TechnologyID.Auth0,
+      TechnologyID.Tailwind,
+    ],
+    features: [
+      "Workflows:  Automate tasks and processes",
+      "Editor: Customizable scraping logic editor",
+      "Tasks: Launch Browser, Get HTML, Extract text from element...",
+      "Stripe: Subscription and credit management",
+      "WebSocket: Real-time updates",
+      "MongoDB for scalable data storage",
+      "Python-based backend for web scraping",
+      "User authentication and role-based access",
+      "API integration for third-party services",
+      "Advanced error handling and retries",
+      "User-friendly interface for managing tasks",
+    ],
+    demoUrl: "https://scrapmatic.vercel.app/",
+    githubUrl: "https://github.com/hejzbh/scrapmatic-saas-app",
+  },
+  {
+    id: "my-portfolio",
+    name: "My Portfolio Website",
+    shortDescription:
+      "Personal animated portfolio showcasing my projects, skills, and expertise in development.",
+    thumbnail: "/images/projects/my-portfolio/thumbnail.webp",
+    githubUrl: "https://github.com/hejzbh/my-portfolio-web",
+    technologiesIds: [
+      TechnologyID.NextJS,
+      TechnologyID.FramerMotion,
+      TechnologyID.Tailwind,
+      TechnologyID.MORE,
+    ],
+    demoUrl: "https://hazim-tulumovic.vercel.app/",
+  },
+  {
+    id: "webranch",
+    name: "Webranch Website",
+    shortDescription: "Website showcasing Webranch’s digital solutions.",
+    thumbnail: "/images/projects/webranch/thumbnail.webp",
+    technologiesIds: [
+      TechnologyID.NextJS,
+      TechnologyID.FramerMotion,
+      TechnologyID.Tailwind,
+    ],
+    demoUrl: "https://www.webranch.team",
+  },
+  {
+    id: "lb-profile",
+    name: "LB Profile Website",
+    shortDescription:
+      "A website for a construction company distributing building materials across the EU, showcasing their services and products for efficient project execution",
+    thumbnail: "/images/projects/lb-profile/thumbnail.webp",
+    demoUrl: "https://lb-profile.vercel.app/",
+    technologiesIds: [
+      TechnologyID.NextJS,
+      TechnologyID.Python,
+      TechnologyID.FramerMotion,
+      TechnologyID.Tailwind,
+    ],
   },
   {
     id: "webonify",
@@ -55,14 +136,13 @@ export const projects: ProjectType[] = [
     shortDescription:
       "My unique, pre-built e-commerce system, fully tailored to your needs and ready for immediate use.",
     thumbnail: "/images/projects/webonify/thumbnail.webp",
-  },
-  {
-    id: "my-portfolio",
-    name: "My Portfolio Website",
-    shortDescription:
-      "Personal portfolio showcasing my projects, skills, and expertise in development.",
-    thumbnail: "/images/projects/my-portfolio/thumbnail.webp",
-    githubUrl: "https://github.com/hejzbh/my-portfolio-web",
-    technologiesIds: [5, 10, 874],
+    technologiesIds: [
+      TechnologyID.NextJS,
+      TechnologyID.Python,
+      TechnologyID.Stripe,
+      TechnologyID.TypeScript,
+      TechnologyID.Tailwind,
+      TechnologyID.MORE,
+    ],
   },
 ];

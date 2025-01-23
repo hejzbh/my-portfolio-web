@@ -10,6 +10,7 @@ export type ProjectType = {
   shortDescription: string;
   technologiesIds?: number[];
   githubUrl?: string;
+  demoUrl?: string;
   thumbnail: string;
   jsxContent?: () => any;
   videoSrc?: string;
