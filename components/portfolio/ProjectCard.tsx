@@ -56,7 +56,7 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
                   title="Live Demo"
                   className="p-2 text-secondary flex hover:text-primary  text-xs md:text-[1rem] font-normal"
                 >
-                  <FaEye size={18} className="mr-1" /> Demo
+                  <FaEye size={18} />
                 </Link>
               )}
             </div>
