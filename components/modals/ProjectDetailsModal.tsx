@@ -84,7 +84,7 @@ const ProjectDetailsModal = ({
             href={project.demoUrl}
             target="_self"
             title="Live Demo"
-            className="p-2 text-secondary hover:text-primary flex items-center"
+            className="p-2 text-secondary hover:text-primary flex items-center  text-xs md:text-[1rem] font-normal"
           >
             <FaEye size={18} className="mr-2" />
             Live Demo

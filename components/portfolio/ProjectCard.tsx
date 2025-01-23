@@ -54,7 +54,7 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
                   href={project.demoUrl}
                   target="_self"
                   title="Live Demo"
-                  className="p-2 text-secondary flex hover:text-primary"
+                  className="p-2 text-secondary flex hover:text-primary  text-xs md:text-[1rem] font-normal"
                 >
                   <FaEye size={18} className="mr-1" /> Demo
                 </Link>
