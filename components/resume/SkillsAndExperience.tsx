@@ -19,10 +19,6 @@ const SkillsAndExperience = ({ className = "" }: SkillsAndExperienceProps) => {
       <SectionHeading
         title="Skills & Experience"
         description="An overview of my key skills, technologies I work with, tools I use, and my professional journey so far."
-        buttonProps={{
-          title: "Download CV",
-          variant: "primary",
-        }}
       />
 
       {/** Technologies I work with */}
