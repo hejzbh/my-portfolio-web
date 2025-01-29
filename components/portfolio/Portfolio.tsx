@@ -19,7 +19,7 @@ const Portfolio = ({ className = "" }: PortfolioProps) => {
       {/* Heading */}
       <SectionHeading
         title="Portfolio"
-        description="My step-by-step guide ensures a smooth project journey, from the initial consultation to the final delivery. I take care of every detail, allowing you to focus on what you do best."
+        description="A showcase of my work, featuring projects that highlight my expertise in development."
       />
       {/** Projecst */}
       <ProjectsList />
