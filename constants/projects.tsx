@@ -119,7 +119,7 @@ export const projects: ProjectType[] = [
     id: "lb-profile",
     name: "LB Profile Website",
     shortDescription:
-      "A website for a construction company distributing building materials across the EU, showcasing their services and products for efficient project execution",
+      "A website for a construction company distributing building materials across the EU.",
     thumbnail: "/images/projects/lb-profile/thumbnail.webp",
     demoUrl: "https://lb-profile.vercel.app/",
     technologiesIds: [
