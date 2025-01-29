@@ -19,6 +19,7 @@ export enum TechnologyID {
   Zustand = 18,
   FramerMotion = 19,
   Stripe = 20,
+  Webflow = 21,
   MORE = -1,
   // Additional IDs can be added as needed
 }
@@ -147,6 +148,12 @@ export const technologies: {
     id: TechnologyID.FramerMotion,
     name: "Framer Motion",
     image: "/images/technologies/framer-motion.png",
+    description: "",
+  },
+  {
+    id: TechnologyID.Webflow,
+    name: "Webflow",
+    image: "/images/technologies/webflow.png",
     description: "",
   },
   {

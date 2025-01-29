@@ -132,6 +132,15 @@ export const projects: ProjectType[] = [
     ],
   },
   {
+    id: "semla",
+    name: "Semla Website",
+    shortDescription:
+      "A Webflow website created for Semla, a company specializing in automating financial due diligence",
+    demoUrl: "https://www.getsemla.com/",
+    thumbnail: "/images/projects/semla/thumbnail.webp",
+    technologiesIds: [TechnologyID.Webflow],
+  },
+  {
     id: "webonify",
     name: "Webonify",
     shortDescription:
