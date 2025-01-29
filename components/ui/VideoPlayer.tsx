@@ -16,18 +16,15 @@ const VideoPlayer = ({
     return `https://www.youtube.com/embed/${videoId}`;
   }
 
-  console.log(getEmbeedURL(videoSrc));
-
   return (
     <div className={`${className}`}>
       <iframe
         width="100%"
-        height="350px"
         src={getEmbeedURL(videoSrc)}
         frameBorder={0}
         allow="autoplay; encrypted-media"
         allowFullScreen
-        className="rounded-3xl"
+        className="rounded-3xl h-[250px] md:h-[350px]"
       ></iframe>
     </div>
   );
