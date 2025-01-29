@@ -10,7 +10,9 @@ export interface ButtonProps {
   className?: string;
   variant: "primary" | "secondary";
   Icon?: IconType;
-  onClick?: () => void;
+  onClick?: (
+    e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>
+  ) => void;
   href?: string;
   linkAsButton?: boolean;
   playClickAudio?: boolean;
@@ -44,7 +46,9 @@ const Button = ({
   if (href) {
     return (
       <Link
-        onClick={() => {
+        onClick={(e) => {
+          onClick(e);
+
           if (playClickAudio) {
             playAudio("/mp3/click.wav");
           }
@@ -69,12 +73,12 @@ const Button = ({
 
   return (
     <button
-      onClick={() => {
+      onClick={(e) => {
         if (playClickAudio) {
           playAudio("/mp3/click.wav");
         }
 
-        onClick();
+        onClick(e);
       }}
       className={`${
         sizes[size]

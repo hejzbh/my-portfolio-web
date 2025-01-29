@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import useModal from "@/hooks/use-modal";
+import { projects } from "@/constants/projects";
 
 const Evervault = dynamic(() => import("@/components/ui/animated/Evervault"));
 const FlipWords = dynamic(() => import("@/components/ui/animated/FlipWords"));
@@ -11,6 +14,8 @@ export interface HeroProps {
 }
 
 const Hero = ({ className = "" }: HeroProps) => {
+  const { openModal } = useModal();
+
   return (
     <Evervault>
       <section
@@ -48,25 +53,14 @@ const Hero = ({ className = "" }: HeroProps) => {
             </p>
 
             <p>
-              {" "}
-              Explore my{" "}
+              Explore{" "}
               <Button
-                href="#portfolio"
-                title="Portfolio"
-                variant="primary"
-                className="text-primary  hover:underline"
-              />
-              ,{" "}
-              <Button
-                href="#resume"
-                title="Resume "
-                variant="primary"
-                className="text-primary  hover:underline"
-              />
-              or
-              <Button
-                href="https://www.webranch.team/"
-                title=" Agency"
+                onClick={(e) => {
+                  e.preventDefault();
+                  openModal("projectDetails", { project: projects[0] });
+                }}
+                href="#"
+                title="the most impactful project (Click here)"
                 variant="primary"
                 className="text-primary  hover:underline"
               />
