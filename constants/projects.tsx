@@ -22,7 +22,7 @@ export const projects: ProjectType[] = [
     ], // @/constants/technologies.ts for details
     features: [
       "Wrote enterprise code",
-      "3D charts and interactive tables for data visualization (Stats, Key Metrics, etc.)",
+      "3D charts/graphs and interactive tables for data visualization (Stats, Key Metrics, etc.)",
       "Auth: Auth0 authentication for secure user access",
       "Stripe: Shop, Pricing Plans, Subscriptions, Invoices, Payments etc.",
       "User Management: Administrative control over user's roles, blocking, permissions, profiles etc.",
