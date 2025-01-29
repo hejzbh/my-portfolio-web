@@ -29,8 +29,7 @@ export const projects: ProjectType[] = [
       "AI Chat: Advisor for user interactions and support",
       "more...",
     ],
-    videoSrc:
-      "https://www.youtube.com/watch?v=bKUdKI_cvn4&ab_channel=HazimTulumovic",
+    videoSrc: "https://www.youtube.com/watch?v=NuEUvGkLA1w&feature=youtu.be",
     jsxContent: () => {
       return (
         <div>
