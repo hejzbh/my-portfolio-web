@@ -13,6 +13,7 @@ export type ProjectType = {
   demoUrl?: string;
   thumbnail: string;
   jsxContent?: () => any;
+  featured?: boolean;
   videoSrc?: string;
   features?: string[];
 };

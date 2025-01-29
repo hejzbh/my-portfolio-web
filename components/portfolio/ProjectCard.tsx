@@ -23,7 +23,11 @@ const ProjectCard = ({ className = "", project }: ProjectCardProps) => {
   return (
     <article className={`h-full ${className}`}>
       <CardContainer className="inter-var">
-        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl  w-auto  h-auto rounded-xl p-6 border  ">
+        <CardBody
+          className={`bg-gray-50 relative group/card  dark:hover:shadow-2xl  w-auto rounded-xl p-6 border ${
+            project.featured ? "bg-primary/10 border-primary" : ""
+          }`}
+        >
           <CardItem
             translateZ="50"
             className="text-[1rem] xl:text-xl 3xl:text-[1.4rem] font-semibold text-secondary"

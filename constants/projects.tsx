@@ -6,6 +6,7 @@ export const projects: ProjectType[] = [
   {
     id: "vyre",
     name: "Cloudvyre",
+    featured: true,
     shortDescription:
       "SaaS: Automated platform for seamless Azure operations and efficient cloud management.",
     thumbnail: "/images/projects/vyre/thumbnail.webp",
@@ -60,6 +61,7 @@ export const projects: ProjectType[] = [
   {
     id: "scrapmatic",
     name: "Scrapmatic - No code web scraper",
+    featured: true,
     shortDescription:
       "SaaS: Full Stack Application that automates web scraping",
     thumbnail: "/images/projects/scrapmatic/thumbnail.webp",
