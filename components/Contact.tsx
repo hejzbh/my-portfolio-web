@@ -46,11 +46,11 @@ const Contact = ({ className = "" }: Props) => {
               E-Mail
             </h3>
             <Link
-              href={"mailto:tulumovichazim18@gmail.com"}
-              title="tulumovichazim18@gmail.com"
+              href={"mailto:hazimtulumovic.careers@gmail.com"}
+              title="hazimtulumovic.careers@gmail.com"
               className="text-sm md:text-lg text-secondary hover:text-primary transition"
             >
-              tulumovichazim18@gmail.com
+              hazimtulumovic.careers@gmail.com
             </Link>
             <Link
               href={"mailto: hazim@vyre.no"}
